@@ -1,0 +1,27 @@
+#This file is used to configure the behaviour of RNAeditor
+
+#please change the directory of the following files to the location in your system
+
+omni = /PATH/TO/GRCH37/1000G_omni2.5.b37.sites.vcf
+dbSNP = /PATH/TO/GRCH37/dbsnp_135.b37.vcf
+esp = /PATH/TO/GRCH37/NHLBI_Exome_Sequencing_Project_6500SI.vcf
+hapmap = /PATH/TO/GRCH37/hapmap_3.3.b37.sites.vcf
+gtfFile = /PATH/TO/GRCH37/genes.gtf
+refGenome = /PATH/TO/GRCH37/human_g1k_v37.fasta
+aluRegions = /PATH/TO/GRCH37/repeats.bed
+
+
+output = default
+sourceDir =/home/bioinf/miniconda2/envs/RNAditing/bin/
+maxDiff = 0.04
+seedDiff = 2
+standCall = 0
+standEmit = 0
+edgeDistance = 3
+intronDistance = 5
+minPts = 5
+eps = 50
+paired = True
+keepTemp = True
+overwrite = False
+threads = 5

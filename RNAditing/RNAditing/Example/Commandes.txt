@@ -1,0 +1,19 @@
+# For the RNA editing sites prediction
+
+$ source activate RNAEditor
+
+$ RNAditing -A -a -c /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/configuration.txt -f /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/Fastq/ -s /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/fichier_test.txt -o /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/ -p 0.75 -e single
+
+###### Prediction ok: ######
+
+# Path to RNAEditor results directory: /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/RNAEditor/ #
+# Path to BAM files: /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/BAM/ #
+
+##### # For the research of Editing sites known on datatabase and the common Editing sites recovery discovered by RNAEditor and REDItools, please make the following command lines #####
+
+$ source deactivate 
+
+$ source activate REDItools
+
+$ RNAditing -E -a -i /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/BAM/ -c /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/RNAEditor/ -d ~/Documents/Scripts/RNAditing/REDItools/FILES/test.tab.gz -s ~/Documents/Scripts/RNAditing/REDItools/FILES/new_splicesites.ss -v ~/Bureau/Bases/dbSNP.gtf.gz -o /media/bioinf/faef2f7b-527b-4b8a-859e-72ad73bd98bc/TEST_PIPELINE/ -p 0.75 -r /media/bioinf/77be30bc-169a-430d-a81c-0c131786c26f/FILES/GRCH37/human_g1k_v37.fasta
+
